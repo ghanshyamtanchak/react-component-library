@@ -5,12 +5,10 @@ import theme from '../src/theme'
 
 export const decorators = [
   (Story) => (
-    <BrowserRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Story />
-      </ThemeProvider>
-    </BrowserRouter>
+    </ThemeProvider>
   ),
 ];
 
